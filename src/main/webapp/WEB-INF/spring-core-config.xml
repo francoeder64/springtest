@@ -12,4 +12,9 @@
  
 	<context:component-scan base-package="sv.edu.udb.mod6.spring" />
  
+ <bean id = "HelloWorldService" class = "sv.edu.udb.mod6.spring.bean.HelloWorldService">
+      
+  </bean>
+
+ 
 </beans>

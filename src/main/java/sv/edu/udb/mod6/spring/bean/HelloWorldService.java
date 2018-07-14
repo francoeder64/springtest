@@ -1,14 +1,13 @@
 package sv.edu.udb.mod6.spring.bean;
 
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
-@Component
 public class HelloWorldService {
+	
 
 	public String getDesc() {
 
-		return "Gradle + Spring MVC Hello World Example";
+		return "Spring MVC Hello World Example!!!!!";
 
 	}
 
