@@ -12,11 +12,19 @@
  
 	<context:component-scan base-package="sv.edu.udb.mod6.spring" />
  
+ <!-- se configura el despachador de peticiones (dispatcher) -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+ 
+     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
+        <property name="url" value="jdbc:mysql://localhost:3306/agenda" />
+        <property name="username" value="root" />
+        <property name="password" value="admin" />
+    </bean>	
  
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	 
