@@ -13,8 +13,33 @@
 	<context:component-scan base-package="sv.edu.udb.mod6.spring" />
  
  <bean id = "HelloWorldService" class = "sv.edu.udb.mod6.spring.bean.HelloWorldService">
-      
   </bean>
 
+
+<!-- 
+
+<bean id = "helloWorld" class = "com.tutorialspoint.HelloWorld">
+      <property name = "message" value = "Hello World!"/>
+   </bean>
+
+
+  <bean id = "..." class = "...">
+   </bean>
+
+  
+   <bean id = "..." class = "..." lazy-init = "true">
+   </bean>
+
+  
+   <bean id = "..." class = "..." init-method = "...">
+   </bean>
+
+   
+   <bean id = "..." class = "..." destroy-method = "...">
+     
+   </bean>
+
+
+ -->
  
 </beans>
